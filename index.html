@@ -3,96 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esporte News</title>
-    <link rel="shortcut icon" href="img/bola-de-futebol.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <title>Notícia do Dia - Esportes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        #main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 1.5em;
+        }
+        .data {
+            font-size: 0.9em;
+            color: #888;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            header, footer {
+                padding: 10px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 960px) {
+            h1 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+        @media (min-width: 961px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div id="logo"> ⚽Esporte News</div>
-        <nav id="menu">
-            <a href="#noticia1">Futebol</a>
-            <a href="#noticia2">Fórmula 1</a>
-            <a href="#noticia3">Copa do Brasil</a>
-            <a href="#noticia4">Tênis</a>
-            <a href="#noticia5">Vôlei</a>
-        </nav>
-    </header>
 
-    <!-- Principal -->
-    <section id="main">
-        <div class="container">
-            <!-- Notícia 1: Futebol -->
-            <article id="noticia1">
-                <h1>Brasil vence Colômbia e mantém liderança nas Eliminatórias da Copa</h1>
-                <p class="data">Publicado em: 18 de Outubro de 2024</p>
-                <img src="img/futebol.jpeg" alt="Imagem de futebol">
-                <p>
-                    Em mais uma rodada das Eliminatórias da Copa do Mundo de 2026, o Brasil venceu a Colômbia por 2 a 1 em um jogo emocionante na noite desta quarta-feira. Os gols brasileiros foram marcados por Neymar e Richarlison, garantindo a liderança da equipe comandada por Fernando Diniz.
-                </p>
-                <p>
-                    O time colombiano até conseguiu empatar no início do segundo tempo, com um gol de Luis Díaz, mas a seleção brasileira mostrou resiliência e voltou à frente com um gol de cabeça de Richarlison aos 78 minutos. A vitória mantém o Brasil invicto e firme na liderança do grupo sul-americano.
-                </p>
-            </article>
+<header>
+    <div id="logo">⚽ Esporte News</div>
+    <nav id="menu">
+        <a href="#noticia1">Futebol</a>
+        <a href="#noticia2">Fórmula 1</a>
+        <a href="#noticia3">Copa do Brasil</a>
+        <a href="#noticia4">Tênis</a>
+        <a href="#noticia5">Vôlei</a>
+    </nav>
+</header>
 
-            <!-- Notícia 2: Fórmula 1 -->
-            <article id="noticia2">
-                <h1>Lewis Hamilton vence GP do Japão e encurta vantagem de Verstappen no Mundial de F1</h1>
-                <p class="data">Publicado em: 18 de Outubro de 2024</p>
-                <img src="img/formula1.jpg" alt="Imagem de Fórmula 1">
-                <p>
-                    O heptacampeão mundial Lewis Hamilton venceu o Grande Prêmio do Japão, uma vitória crucial para manter suas esperanças de título no campeonato de 2024. Com essa vitória, Hamilton reduziu a vantagem de Max Verstappen, que continua liderando, mas agora com uma diferença menor.
-                </p>
-                <p>
-                    "Foi uma corrida incrível", disse Hamilton após a vitória. "A equipe fez um trabalho fantástico, e estamos focados em continuar pressionando nas últimas corridas do ano."
-                </p>
-            </article>
+<!-- Principal -->
+<section id="main">
+    <div class="container">
+        <!-- Notícia 1: Futebol -->
+        <article id="noticia1">
+            <h1>Brasil vence Colômbia e mantém liderança nas Eliminatórias da Copa</h1>
+            <p class="data">Publicado em: 18 de Outubro de 2024</p>
+            <img src="https://example.com/img/futebol.jpeg" alt="Imagem de futebol">
+            <p>
+                Em mais uma rodada das Eliminatórias da Copa do Mundo de 2026, o Brasil venceu a Colômbia por 2 a 1 em um jogo emocionante na noite desta quarta-feira. Os gols brasileiros foram marcados por Neymar e Richarlison, garantindo a liderança da equipe comandada por Fernando Diniz.
+            </p>
+            <p>
+                O time colombiano até conseguiu empatar no início do segundo tempo, com um gol de Luis Díaz, mas a seleção brasileira mostrou resiliência e voltou à frente com um gol de cabeça de Richarlison aos 78 minutos. A vitória mantém o Brasil invicto e firme na liderança do grupo sul-americano.
+            </p>
+            <!-- Adicionando vídeo relacionado -->
+            <h3>Vídeo da Partida</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/2sQ7ocXnUjA" frameborder="0" allowfullscreen></iframe>
+            <!-- Adicionando áudio relacionado -->
+            <h3>Análise da Partida</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+        </article>
 
-            <!-- Notícia 3: Copa do Brasil -->
-            <article id="noticia3">
-                <h1>Flamengo derrota São Paulo e se classifica para a final da Copa do Brasil</h1>
-                <p class="data">Publicado em: 18 de Outubro de 2024</p>
-                <img src="img/flamengo.jpeg" alt="Imagem de futebol">
-                <p>
-                    Em uma partida decisiva, o Flamengo garantiu sua vaga na final da Copa do Brasil ao vencer o São Paulo por 2 a 0 no Maracanã. Com gols de Pedro e Bruno Henrique, o time carioca se classificou para mais uma final, em busca de mais um título na temporada.
-                </p>
-                <p>
-                    A final será disputada contra o Grêmio, que também garantiu sua classificação em uma vitória dramática contra o Corinthians. O Flamengo busca seu quinto título da competição, consolidando-se como um dos maiores vencedores da história do torneio.
-                </p>
-            </article>
+        <!-- Notícia 2: Fórmula 1 -->
+        <article id="noticia2">
+            <h1>Lewis Hamilton vence GP do Japão e encurta vantagem de Verstappen no Mundial de F1</h1>
+            <p class="data">Publicado em: 18 de Outubro de 2024</p>
+            <img src="https://example.com/img/formula1.jpg" alt="Imagem de Fórmula 1">
+            <p>
+                O heptacampeão mundial Lewis Hamilton venceu o Grande Prêmio do Japão, uma vitória crucial para manter suas esperanças de título no campeonato de 2024. Com essa vitória, Hamilton reduziu a vantagem de Max Verstappen, que continua liderando, mas agora com uma diferença menor.
+            </p>
+            <p>
+                "Foi uma corrida incrível", disse Hamilton após a vitória. "A equipe fez um trabalho fantástico, e estamos focados em continuar pressionando nas últimas corridas do ano."
+            </p>
+        </article>
 
-            <!-- Notícia 4: Tênis -->
-            <article id="noticia4">
-                <h1>Novak Djokovic conquista seu 25º título de Grand Slam no US Open</h1>
-                <p class="data">Publicado em: 18 de Outubro de 2024</p>
-                <img src="img/tenis.jpeg" alt="Imagem de tênis">
-                <p>
-                    Novak Djokovic fez história ao conquistar seu 25º título de Grand Slam ao vencer Daniil Medvedev na final do US Open de 2024. Com essa vitória, Djokovic se consolida ainda mais como o maior vencedor de torneios de Grand Slam na história do tênis.
-                </p>
-                <p>
-                    O sérvio, de 37 anos, mostrou mais uma vez sua capacidade de dominar o circuito, vencendo por 3 sets a 1. "Este é um momento especial na minha carreira. Continuarei lutando enquanto tiver paixão pelo esporte", declarou Djokovic após o jogo.
-                </p>
-            </article>
+        <!-- Notícia 3: Copa do Brasil -->
+        <article id="noticia3">
+            <h1>Flamengo derrota São Paulo e se classifica para a final da Copa do Brasil</h1>
+            <p class="data">Publicado em: 18 de Outubro de 2024</p>
+            <img src="https://example.com/img/flamengo.jpeg" alt="Imagem de Flamengo">
+            <p>
+                Em uma partida decisiva, o Flamengo garantiu sua vaga na final da Copa do Brasil ao vencer o São Paulo por 2 a 0 no Maracanã. Com gols de Pedro e Bruno Henrique, o time carioca se classificou para mais uma final, em busca de mais um título na temporada.
+            </p>
+            <p>
+                A final será disputada contra o Grêmio, que também garantiu sua classificação em uma vitória dramática contra o Corinthians. O Flamengo busca seu quinto título da competição, consolidando-se como um dos maiores vencedores da história do torneio.
+            </p>
+        </article>
 
-            <!-- Notícia 5: Vôlei -->
-            <article id="noticia5">
-                <h1>Seleção Brasileira de Vôlei Feminino se classifica para as Olimpíadas de Paris 2024</h1>
-                <p class="data">Publicado em: 18 de Outubro de 2024</p>
-                <img src="img/volei.webp" alt="Imagem de vôlei">
-                <p>
-                    A Seleção Brasileira de Vôlei Feminino garantiu sua vaga nas Olimpíadas de Paris 2024 ao vencer a equipe da Sérvia em um jogo emocionante. Com a vitória por 3 sets a 2, o Brasil se classificou de forma direta e busca seu terceiro ouro olímpico na modalidade.
-                </p>
-                <p>
-                    O técnico José Roberto Guimarães elogiou a performance da equipe: "Estamos no caminho certo e vamos com tudo para Paris em busca do ouro." A seleção brasileira é uma das favoritas para conquistar o título olímpico.
-                </p>
-            </article>
-        </div>
-    </section>
+        <!-- Notícia 4: Tênis -->
+        <article id="noticia4">
+            <h1>Novak Djokovic conquista seu 25º título de Grand Slam no US Open</h1>
+            <p class="data">Publicado em: 18 de Outubro de 2024</p>
+            <img src="https://example.com/img/tenis.jpeg" alt="Imagem de Tênis">
+            <p>
+                Novak Djokovic fez história ao conquistar seu 25º título de Grand Slam ao vencer Daniil Medvedev na final do US Open de 2024. Com essa vitória, Djokovic se consolida ainda mais como o maior vencedor de torneios de Grand Slam na história do tênis.
+            </p>
+            <p>
+                O sérvio, de 37 anos, mostrou mais uma vez sua capacidade de dominar o circuito, vencendo por 3 sets a 1. "Este é um momento especial na minha carreira. Continuarei lutando enquanto tiver paixão pelo esporte", declarou Djokovic após o jogo.
+            </p>
+        </article>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Esporte News. Todos os direitos reservados.</p>
-    </footer>
+        <!-- Notícia 5: Vôlei -->
+        <article id="noticia5">
+            <h1>Seleção Brasileira de Vôlei Feminino se classifica para as Olimpíadas de Paris 2024</h1>
+            <p class="data">Publicado em: 18 de Outubro de 2024</p>
+            <img src="https://example.com/img/volei.webp" alt="Imagem de Vôlei">
+            <p>
+                A Seleção Brasileira de Vôlei Feminino garantiu sua vaga nas Olimpíadas de Paris 2024 ao vencer a equipe da Sérvia em um jogo emocionante. Com a vitória por 3 sets a 2, o Brasil se classificou de forma direta e busca seu terceiro ouro olímpico na modalidade.
+            </p>
+            <p>
+                O técnico José Roberto Guimarães elogiou a performance da equipe: "Estamos no caminho certo e vamos com tudo para Paris em busca do ouro." A seleção brasileira é uma das favoritas para conquistar o título olímpico.
+            </p>
+        </article>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Notícia do Dia. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
